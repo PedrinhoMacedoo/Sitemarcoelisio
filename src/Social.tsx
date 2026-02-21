@@ -8,7 +8,7 @@ export default function Social() {
 
                     {/* Background Image Container */}
                     <div className="absolute inset-0 z-0">
-                        <img alt="Horta comunitária" className="w-full h-full object-cover object-center" src="/DSC02866 1.webp" />
+                        <img loading="lazy" alt="Horta comunitária" className="w-full h-full object-cover object-center" src="/horta-social.webp" />
                         <div className="absolute inset-0 bg-black/30 md:bg-transparent"></div> {/* Fallback overlay for mobile */}
                     </div>
 

@@ -11,7 +11,7 @@ export default function Hero() {
                 <div className="absolute top-0 bottom-0 z-0 bg-forest-dark right-0 w-full lg:right-[-35%] lg:w-[135%]">
                     <img
                         className="w-full h-full object-cover object-[75%_center] lg:object-right pointer-events-none"
-                        src="/hero-bg.webp"
+                        src="/hero-bg-opt.webp"
                         alt="Background Hero Marco Elísio"
                     />
                 </div>

@@ -14,7 +14,7 @@ export default function About() {
                         </div>
 
                         <div className="w-full aspect-square rounded-xl overflow-hidden mb-8 lg:mt-24 shadow-sm">
-                            <img alt="Marco no campo" className="w-full h-full object-cover" src="/Foto-34.webp" />
+                            <img loading="lazy" alt="Marco no campo" className="w-full h-full object-cover" src="/foto-34-opt.webp" />
                         </div>
 
                         <div>
@@ -44,7 +44,7 @@ export default function About() {
                     {/* Right Column */}
                     <div className="w-full lg:w-1/4 mt-8 lg:mt-0">
                         <div className="w-full h-[400px] lg:h-[600px] rounded-xl overflow-hidden shadow-sm">
-                            <img alt="Retrato Profissional Marco Elísio" className="w-full h-full object-cover object-top" src="/Foto-54.webp" />
+                            <img loading="lazy" alt="Retrato Profissional Marco Elísio" className="w-full h-full object-cover object-top" src="/foto-54-opt.webp" />
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default function Lectures() {
                     {/* Left side: Large Image */}
                     <div className="w-full lg:w-1/2">
                         <div className="w-full h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-sm">
-                            <img alt="Palestra Marco Elísio" className="w-full h-full object-cover" src="/Foto-3.webp" />
+                            <img loading="lazy" alt="Palestra Marco Elísio" className="w-full h-full object-cover" src="/palestras.webp" />
                         </div>
                     </div>
 

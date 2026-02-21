@@ -17,7 +17,7 @@ export default function Acting() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12">
                     {/* Card 1 */}
                     <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <img alt="Planalto Tratores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/Foto-33.webp" />
+                        <img loading="lazy" alt="Planalto Tratores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/foto-33.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
                         <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 transition-transform duration-300">
@@ -33,7 +33,7 @@ export default function Acting() {
 
                     {/* Card 2 */}
                     <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <img alt="Assoreval" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg.webp" />
+                        <img alt="Assoreval" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg-opt.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
                         <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 transition-transform duration-300">
@@ -49,7 +49,7 @@ export default function Acting() {
 
                     {/* Card 3 */}
                     <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <img alt="Agrovia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/DSC02581.JPG.webp" />
+                        <img loading="lazy" alt="Agrovia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/agrovia.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
                         <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 transition-transform duration-300">
