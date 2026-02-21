@@ -1,0 +1,185 @@
+@import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* Primary vibrant green like the "Learn More" buttons */
+    --color-primary: #65a30d;
+    --color-primary-dark: #4d7a09;
+
+    /* Earthy tones from the image */
+    --color-forest: #1e3a2f;
+    /* Dark green for text and footers */
+    --color-forest-dark: #12221b;
+    /* Very dark background footer */
+
+    /* Warm creams for the main background */
+    --color-background-light: #f6f4ed;
+    /* Main warm cream background */
+    --color-surface-light: #ffffff;
+    /* White cards */
+    --color-surface-dark: #e8e4db;
+    /* Muted cream for secondary sections */
+
+    /* Typography */
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Clash Display", sans-serif;
+    /* We will use Clash for headings as imported */
+}
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .grain-overlay {
+        position: relative;
+    }
+
+    .grain-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 10;
+    }
+
+    .glass-nav {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glass-card {
+        background: rgba(20, 40, 30, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-gradient {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+    }
+
+    .text-stroke {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+        color: transparent;
+    }
+
+    .vertical-rl {
+        writing-mode: vertical-rl;
+    }
+}
+
+/* Accordion styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-item:hover .accordion-content {
+    max-height: 200px;
+}
+
+html::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at 20% 80%, #fff 1px, transparent 0px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.04;
+    mix-blend-mode: plus-lighter;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Estilos do Animated Button (Elementor) */
+.bttn-father {
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #353C36;
+    padding: 10px 84px 10px 40px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.bttn-father.nav-bttn {
+    height: 48px;
+    padding: 8px 64px 8px 28px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.bttn-child {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 228, 153, 1) 0%, rgba(0, 143, 113, 1) 100%);
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    right: 8px;
+    z-index: 0;
+}
+
+.nav-bttn .bttn-child {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    right: 6px;
+}
+
+.bttn-father:hover .bttn-child {
+    width: calc(100% - 16px);
+}
+
+.nav-bttn:hover .bttn-child {
+    width: calc(100% - 12px);
+}
+
+.bttn-father:hover span {
+    color: transparent;
+    transition: color 0.1s ease-in-out;
+}
+
+.bttn-child svg {
+    transform: rotate(315deg);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-bttn .bttn-child svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 480px) {
+    .bttn-father {
+        width: 100%;
+        justify-content: center;
+        padding-right: 70px;
+    }
+}
