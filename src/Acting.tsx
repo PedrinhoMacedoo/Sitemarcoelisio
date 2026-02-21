@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function Acting() {
     return (
@@ -17,15 +16,17 @@ export default function Acting() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12">
                     {/* Card 1 */}
-                    <div className="group relative rounded-xl h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <img alt="Planalto Tratores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/Foto-33.webp" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-4 left-4 right-4 bg-white p-6 rounded-lg shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                            <span className="text-[10px] font-bold tracking-widest text-gray-400 mb-2 block uppercase">Tecnologia & Máquinas</span>
-                            <h3 className="font-display text-xl font-bold text-forest mb-2">Planalto Tratores</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">
-                                Concessionária referência, levando tecnologia de ponta e maquinário eficiente para impulsionar a produtividade no campo.
+                        <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 transition-transform duration-300">
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-3 block uppercase">Tecnologia & Máquinas</span>
+                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-3">Planalto Tratores</h3>
+                            <p className="text-[#6B7280] text-[15px] leading-[1.6]">
+                                Concessionária referência, levando tecnologia <br className="hidden sm:block" />
+                                de ponta e maquinário eficiente para <br className="hidden sm:block" />
+                                impulsionar a produtividade no campo.
                             </p>
                         </div>
                     </div>
@@ -47,15 +48,17 @@ export default function Acting() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="group relative rounded-xl h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <img alt="Agrovia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/DSC02581.JPG.webp" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-4 left-4 right-4 bg-white p-6 rounded-lg shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                            <span className="text-[10px] font-bold tracking-widest text-gray-400 mb-2 block uppercase">Infraestrutura</span>
-                            <h3 className="font-display text-xl font-bold text-forest mb-2">Agrovia</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">
-                                Logística conectada, garantindo que a produção chegue ao destino com eficiência na rodovia Castelo Branco.
+                        <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 transition-transform duration-300">
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-3 block uppercase">Infraestrutura</span>
+                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-3">Agrovia</h3>
+                            <p className="text-[#6B7280] text-[15px] leading-[1.6]">
+                                Logística conectada, garantindo que a <br className="hidden sm:block" />
+                                produção chegue ao destino com eficiência <br className="hidden sm:block" />
+                                na rodovia Castelo Branco.
                             </p>
                         </div>
                     </div>
