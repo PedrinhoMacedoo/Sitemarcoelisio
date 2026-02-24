@@ -7,11 +7,10 @@ export default function Hero() {
         <header className="relative w-full h-screen min-h-[700px] flex items-center justify-center bg-background-light px-4 pt-2 pb-4 lg:px-10 lg:pt-4 lg:pb-10">
             <div className="relative w-full h-full max-w-screen-2xl overflow-hidden rounded-[20px] lg:rounded-[40px] bg-forest-dark shadow-2xl">
                 {/* Background Image */}
-                {/* Background Image Wrapper (Hiding Books on the right 35%) */}
+                {/* Background Image Wrapper */}
                 <div className="absolute top-0 bottom-0 z-0 bg-forest-dark right-0 w-full lg:right-[-35%] lg:w-[135%]">
                     <img
-                        className="w-full h-full object-cover object-[75%_center] lg:object-right pointer-events-none fixed lg:absolute inset-0"
-                        style={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                        className="w-full h-full object-cover object-center lg:object-right pointer-events-none absolute inset-0"
                         src="/hero-bg-opt.webp"
                         alt="Background Hero Marco Elísio"
                     />
