@@ -38,8 +38,6 @@ export default function Footer() {
                         <h4 className="font-bold text-white mb-6 text-sm tracking-wider">Locations</h4>
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li>Goiás, GO</li>
-                            <li>Paraná, PR</li>
-                            <li>São Paulo, SP</li>
                         </ul>
                     </div>
 
@@ -48,10 +46,10 @@ export default function Footer() {
                         <h4 className="font-bold text-white mb-6 text-sm tracking-wider">Contact Us</h4>
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li>
-                                <a className="hover:text-primary transition-colors" href="mailto:contato@marcoelisio.com.br">contato@marcoelisio.com.br</a>
+                                <a className="hover:text-primary transition-colors" href="mailto:Candidadiasrp@gmail.com">Candidadiasrp@gmail.com</a>
                             </li>
                             <li>
-                                <a className="hover:text-primary transition-colors" href="tel:+5511999999999">+55 (11) 9999-9999</a>
+                                <a className="hover:text-primary transition-colors" href="tel:+5562999712161">+55 62 99971-2161</a>
                             </li>
                         </ul>
                     </div>
