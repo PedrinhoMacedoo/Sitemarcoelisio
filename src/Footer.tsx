@@ -49,7 +49,7 @@ export default function Footer() {
                                 <a className="hover:text-primary transition-colors" href="mailto:Candidadiasrp@gmail.com">Candidadiasrp@gmail.com</a>
                             </li>
                             <li>
-                                <a className="hover:text-primary transition-colors" href="tel:+5562999712161">+55 62 99971-2161</a>
+                                <a className="hover:text-primary transition-colors" href="https://wa.me/5562999712161">+55 62 99971-2161</a>
                             </li>
                         </ul>
                     </div>

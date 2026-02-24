@@ -42,7 +42,7 @@ export default function Hero() {
                             </div>
 
                             <div className="direita elemento3 shrink-0 w-full sm:w-auto">
-                                <AnimatedButton href="#contato" text="Entre em Contato" />
+                                <AnimatedButton href="https://wa.me/5562999712161" text="Entre em Contato" />
                             </div>
                         </div>
                     </div>

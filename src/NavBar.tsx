@@ -18,7 +18,7 @@ export default function NavBar() {
                         <a className="text-forest-dark/70 hover:text-forest-dark transition-colors text-sm font-bold uppercase tracking-widest" href="#atuacao">Atuação</a>
                         <a className="text-forest-dark/70 hover:text-forest-dark transition-colors text-sm font-bold uppercase tracking-widest" href="#social">Social</a>
                         <div className="hidden lg:block">
-                            <AnimatedButton href="#contato" text="Contato" className="nav-bttn" />
+                            <AnimatedButton href="https://wa.me/5562999712161" text="Contato" className="nav-bttn" />
                         </div>
                     </div>
 

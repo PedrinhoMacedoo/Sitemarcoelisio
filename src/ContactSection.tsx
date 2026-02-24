@@ -24,7 +24,7 @@ export default function ContactSection() {
                                 Leve uma palestra inspiradora e técnica sobre o futuro do agronegócio para sua empresa ou conferência.
                             </p>
                             <div className="flex justify-center w-full mt-4">
-                                <AnimatedButton href="mailto:contato@marcorelisio.com" text="Fale com a equipe" />
+                                <AnimatedButton href="https://wa.me/5562999712161" text="Fale com a equipe" />
                             </div>
                         </div>
                     </div>
