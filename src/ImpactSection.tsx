@@ -1,3 +1,4 @@
+import Counter from './Counter';
 
 export default function ImpactSection() {
     return (
@@ -89,7 +90,9 @@ export default function ImpactSection() {
                                 <p className="text-slate-500 dark:text-slate-400 mb-6 italic">"Compartilhando insights diários sobre o futuro do agro e liderança executiva para mais de 15 mil conexões."</p>
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <span className="block text-xl font-black text-forest dark:text-white">15k+</span>
+                                        <span className="block text-xl font-black text-forest dark:text-white">
+                                            <Counter value="15k+" />
+                                        </span>
                                         <span className="text-xs uppercase text-slate-400 font-bold tracking-wider">Seguidores</span>
                                     </div>
                                     <a className="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
@@ -114,7 +117,9 @@ export default function ImpactSection() {
                                 <p className="text-slate-500 dark:text-slate-400 mb-6 italic">"O dia a dia real da gestão no agronegócio. Transparência, tecnologia e a vida no campo."</p>
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <span className="block text-xl font-black text-forest dark:text-white">28k+</span>
+                                        <span className="block text-xl font-black text-forest dark:text-white">
+                                            <Counter value="28k+" />
+                                        </span>
                                         <span className="text-xs uppercase text-slate-400 font-bold tracking-wider">Seguidores</span>
                                     </div>
                                     <a className="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
