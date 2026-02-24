@@ -9,10 +9,17 @@ export default function Hero() {
                 {/* Background Image */}
                 {/* Background Image Wrapper */}
                 <div className="absolute top-0 bottom-0 z-0 bg-forest-dark right-0 w-full lg:right-[-35%] lg:w-[135%]">
+                    {/* Mobile Image */}
                     <img
-                        className="w-full h-full object-cover object-center lg:object-right pointer-events-none absolute inset-0"
+                        className="w-full h-full object-cover object-center pointer-events-none absolute inset-0 lg:hidden"
+                        src="/hero-mobile.webp"
+                        alt="Background Hero Marco Elísio - Mobile"
+                    />
+                    {/* Desktop Image */}
+                    <img
+                        className="w-full h-full object-cover object-right pointer-events-none absolute inset-0 hidden lg:block"
                         src="/hero-bg-opt.webp"
-                        alt="Background Hero Marco Elísio"
+                        alt="Background Hero Marco Elísio - Desktop"
                     />
                 </div>
 
