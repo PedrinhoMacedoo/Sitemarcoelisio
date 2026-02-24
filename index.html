@@ -81,7 +81,6 @@
     const posicaoScroll = window.innerHeight * 0.5;
 
     function fadeScroll() {
-      // Movido para dentro da função para capturar os elementos após o React renderizá-los
       const elementos = document.querySelectorAll('.cima, .baixo, .esquerda, .direita');
       elementos.forEach((elemento) => {
         const elementoTop = elemento.getBoundingClientRect().top - posicaoScroll;
@@ -93,7 +92,18 @@
       })
     }
     window.addEventListener('scroll', fadeScroll);
-    // Dispara uma vez após o carregamento para animações iniciais
+
+    // Usa um MutationObserver para detectar quando o React finaliza a montagem no #root
+    const observer = new MutationObserver(() => {
+      const temElementos = document.querySelectorAll('.cima, .baixo, .esquerda, .direita').length > 0;
+      if (temElementos) {
+        fadeScroll();
+        observer.disconnect(); // desliga após o primeiro paint bem-sucedido
+      }
+    });
+    observer.observe(document.getElementById('root'), { childList: true, subtree: true });
+
+    // Fallback garantido
     window.addEventListener('load', () => setTimeout(fadeScroll, 100));
   </script>
 </body>

@@ -28,20 +28,20 @@ export default function Hero() {
 
                 <div className="relative z-10 w-full h-full p-8 lg:p-20 flex flex-col justify-end">
                     <div className="max-w-4xl">
-                        <h1 className="font-display text-4xl md:text-6xl lg:text-[5rem] font-bold text-white mb-6 md:mb-8 leading-[1] tracking-tight">
+                        <h1 className="esquerda elemento1 font-display text-4xl md:text-6xl lg:text-[5rem] font-bold text-white mb-6 md:mb-8 leading-[1] tracking-tight">
                             MARCO ELÍSIO<br />
                             <span className="text-white opacity-70">NUNES CUNHA</span>
                         </h1>
 
                         <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mt-6 md:mt-8">
-                            <div className="bg-[#1C1C1C]/40 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/5 max-w-[600px]">
+                            <div className="baixo elemento2 bg-[#1C1C1C]/40 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/5 max-w-[600px]">
                                 <p className="text-sm md:text-base text-white/90 font-medium leading-relaxed">
                                     Protagonista em iniciativas estratégicas que fortalecem,
                                     inovam e impulsionam o agronegócio brasileiro para o futuro.
                                 </p>
                             </div>
 
-                            <div className="shrink-0 w-full sm:w-auto">
+                            <div className="direita elemento3 shrink-0 w-full sm:w-auto">
                                 <AnimatedButton href="#contato" text="Entre em Contato" />
                             </div>
                         </div>
