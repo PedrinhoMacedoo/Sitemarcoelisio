@@ -4,7 +4,7 @@ export default function Acting() {
         <section className="py-24 md:py-32 bg-background-light relative overflow-hidden" id="atuacao">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="mb-16 max-w-2xl">
+                <div className="cima elemento1 mb-16 max-w-2xl">
                     <div className="flex items-center gap-4 mb-6">
                         <div className="h-px bg-gray-400 w-8"></div>
                         <span className="text-gray-500 text-sm tracking-widest uppercase">Empreendedorismo</span>
@@ -16,7 +16,7 @@ export default function Acting() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12">
                     {/* Card 1 */}
-                    <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div className="esquerda elemento2 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <img loading="lazy" alt="Planalto Tratores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/foto-33.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
@@ -32,7 +32,7 @@ export default function Acting() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div className="cima elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <img alt="Assoreval" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg-opt.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
@@ -48,7 +48,7 @@ export default function Acting() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div className="direita elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <img loading="lazy" alt="Agrovia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/agrovia.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 

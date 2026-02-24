@@ -6,14 +6,14 @@ export default function Lectures() {
                 <div className="flex flex-col lg:flex-row gap-16 items-start">
 
                     {/* Left side: Large Image */}
-                    <div className="w-full lg:w-1/2">
+                    <div className="esquerda elemento1 w-full lg:w-1/2">
                         <div className="w-full h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-sm">
                             <img loading="lazy" alt="Palestra Marco Elísio" className="w-full h-full object-cover" src="/palestras.webp" />
                         </div>
                     </div>
 
                     {/* Right side: Accordion Text */}
-                    <div className="w-full lg:w-1/2 flex flex-col pt-8 lg:px-4">
+                    <div className="direita w-full lg:w-1/2 flex flex-col pt-8 lg:px-4">
                         <div className="mb-12">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="h-px bg-gray-400 w-8"></div>
@@ -26,7 +26,7 @@ export default function Lectures() {
 
                         <div className="flex flex-col gap-2 w-full">
                             {/* Accordion Item 1 */}
-                            <div className="accordion-item border-b border-gray-200 py-6 cursor-pointer group">
+                            <div className="elemento1 accordion-item border-b border-gray-200 py-6 cursor-pointer group">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-6">
                                         <span className="text-gray-400 font-display text-xl w-6">1.</span>
@@ -42,7 +42,7 @@ export default function Lectures() {
                             </div>
 
                             {/* Accordion Item 2 */}
-                            <div className="accordion-item border-b border-gray-200 py-6 cursor-pointer group">
+                            <div className="elemento2 accordion-item border-b border-gray-200 py-6 cursor-pointer group">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-6">
                                         <span className="text-gray-400 font-display text-xl w-6">2.</span>
@@ -58,7 +58,7 @@ export default function Lectures() {
                             </div>
 
                             {/* Accordion Item 3 */}
-                            <div className="accordion-item border-b border-gray-200 py-6 cursor-pointer group">
+                            <div className="elemento3 accordion-item border-b border-gray-200 py-6 cursor-pointer group">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-6">
                                         <span className="text-gray-400 font-display text-xl w-6">3.</span>

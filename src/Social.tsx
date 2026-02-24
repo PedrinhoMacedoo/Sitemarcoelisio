@@ -13,7 +13,7 @@ export default function Social() {
                     </div>
 
                     {/* Content Card over the background */}
-                    <div className="relative z-10 w-full md:w-1/2 p-6 md:p-12 lg:ml-12">
+                    <div className="cima elemento1 relative z-10 w-full md:w-1/2 p-6 md:p-12 lg:ml-12">
                         <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl border border-gray-100/50">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="h-px bg-gray-400 w-8"></div>

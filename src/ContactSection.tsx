@@ -13,7 +13,7 @@ export default function ContactSection() {
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6c6dmwFjIbJp0f3tEwyjI5KFBMzLxHLa38vWuS1nsr7QSpbXYktCwsjNFuuRiC480EkQ5GUmlP_RymUTjPM2uA5inCDpYZmc1vNnohRtBOZERCwmXrxZeBCVYwGU-KP_5Lg-V75N8xq9QphScitrnf_qUwhtZUr1WAEi7ayytespfqGajiEgaenE1PGK-cE-MSudyiGsh2_kWjqW91EkGoV8bjb8mcZWX9C-vnFniT9yOZYSyZFzQQ2v5gjzDVhkYj2vqpknDCk8"
                             />
                         </div>
-                        <div className="relative z-10 max-w-2xl mx-auto">
+                        <div className="cima elemento2 relative z-10 max-w-2xl mx-auto">
                             <div className="flex justify-center items-center gap-4 mb-8">
                                 <div className="h-[1px] w-12 bg-primary"></div>
                                 <span className="text-primary font-bold tracking-widest uppercase text-sm">Contato Profissional</span>

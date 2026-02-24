@@ -7,7 +7,7 @@ export default function About() {
 
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
                     {/* Left Column */}
-                    <div className="w-full lg:w-1/4 flex flex-col">
+                    <div className="esquerda elemento1 w-full lg:w-1/4 flex flex-col">
                         <div className="flex items-center gap-4 mb-8">
                             <div className="h-px bg-gray-400 w-8"></div>
                             <span className="text-gray-500 text-sm tracking-widest uppercase">Sobre Marco</span>
@@ -23,7 +23,7 @@ export default function About() {
                     </div>
 
                     {/* Middle Column */}
-                    <div className="w-full lg:w-2/4 flex flex-col pt-4 lg:px-8">
+                    <div className="cima elemento2 w-full lg:w-2/4 flex flex-col pt-4 lg:px-8">
                         <h2 className="font-display text-3xl md:text-5xl lg:text-[2.75rem] font-medium text-forest mb-8 leading-[1.2] tracking-tight">
                             Empresário, produtor rural e voz ativa no setor.
                         </h2>
@@ -42,7 +42,7 @@ export default function About() {
                     </div>
 
                     {/* Right Column */}
-                    <div className="w-full lg:w-1/4 mt-8 lg:mt-0">
+                    <div className="direita elemento3 w-full lg:w-1/4 mt-8 lg:mt-0">
                         <div className="w-full h-[400px] lg:h-[600px] rounded-xl overflow-hidden shadow-sm">
                             <img loading="lazy" alt="Retrato Profissional Marco Elísio" className="w-full h-full object-cover object-top" src="/foto-54-opt.webp" />
                         </div>
