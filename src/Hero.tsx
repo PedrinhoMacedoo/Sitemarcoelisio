@@ -10,7 +10,8 @@ export default function Hero() {
                 {/* Background Image Wrapper (Hiding Books on the right 35%) */}
                 <div className="absolute top-0 bottom-0 z-0 bg-forest-dark right-0 w-full lg:right-[-35%] lg:w-[135%]">
                     <img
-                        className="w-full h-full object-cover object-[75%_center] lg:object-right pointer-events-none"
+                        className="w-full h-full object-cover object-[75%_center] lg:object-right pointer-events-none fixed lg:absolute inset-0"
+                        style={{ top: 0, left: 0, right: 0, bottom: 0 }}
                         src="/hero-bg-opt.webp"
                         alt="Background Hero Marco Elísio"
                     />
