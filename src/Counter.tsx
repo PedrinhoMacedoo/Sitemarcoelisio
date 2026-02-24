@@ -65,12 +65,12 @@ export default function Counter({ value, duration = 2000, className = "", prefix
     return (
         <span ref={elementRef} className={`tabular-nums ${className}`}>
             {isPlusAtStart && (
-                <span className={`${prefixColor} font-black`}>+</span>
+                <span className={`${prefixColor} font-black mr-1`}>+</span>
             )}
             {formattedCount}
-            {hasK ? 'K' : ''}
+            {hasK ? <span className="ml-0.5">K</span> : ''}
             {!isPlusAtStart && hasPlus && (
-                <span className={`${prefixColor} font-black`}>+</span>
+                <span className={`${prefixColor} font-black ml-1`}>+</span>
             )}
         </span>
     );
