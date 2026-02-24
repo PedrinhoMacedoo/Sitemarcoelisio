@@ -43,7 +43,7 @@ export default function Social() {
                                 </li>
                             </ul>
 
-                            <AnimatedButton href="#" text="Apoie o Projeto" />
+                            <AnimatedButton href="https://institutoapnf.org/" text="Apoie o Projeto" />
                         </div>
                     </div>
 
