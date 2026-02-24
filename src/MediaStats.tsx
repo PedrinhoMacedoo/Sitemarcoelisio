@@ -21,27 +21,27 @@ export default function MediaStats() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-12 lg:gap-x-16 gap-y-10 w-full text-center">
+                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-10 w-full text-center">
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+718,9K" prefixColor="text-[#7F9042]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Visualizações</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+133,9K" prefixColor="text-[#7F9042]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Alcance</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+4,3K" prefixColor="text-[#7F9042]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Seguidores</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+8,3K" prefixColor="text-[#7F9042]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Interações</span>
@@ -66,27 +66,27 @@ export default function MediaStats() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-12 lg:gap-x-16 gap-y-10 w-full text-center">
+                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-10 w-full text-center">
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+42,5K" prefixColor="text-[#2B3F32]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Impressões</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+7,4K" prefixColor="text-[#2B3F32]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Usuários</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+884" prefixColor="text-[#2B3F32]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Seguidores</span>
                         </div>
                         <div className="flex-1 min-w-[120px]">
-                            <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
+                            <span className="block text-3xl lg:text-4xl font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+1,5K" prefixColor="text-[#2B3F32]" />
                             </span>
                             <span className="text-sm text-white/80 font-normal">Engajamento</span>
