@@ -66,7 +66,7 @@ export default function MediaStats() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-8 gap-y-10 w-full text-center">
+                    <div className="flex flex-row flex-wrap justify-center xl:justify-between items-center gap-x-12 lg:gap-x-16 gap-y-10 w-full text-center">
                         <div className="flex-1 min-w-[120px]">
                             <span className="block text-4xl lg:text-[2.75rem] font-bold text-white mb-2 tracking-tight">
                                 <Counter className="text-white" value="+42,5K" prefixColor="text-[#2B3F32]" />
