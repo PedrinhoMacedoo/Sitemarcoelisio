@@ -15,11 +15,87 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet" />
+  <style>
+    .esquerda {
+      opacity: 0;
+      transition: 0.8s;
+      transform: translate(-30px, 0px);
+      filter: blur(10px);
+    }
+
+    .direita {
+      opacity: 0;
+      transition: 0.8s;
+      transform: translate(30px, 0px);
+      filter: blur(10px);
+    }
+
+    .baixo {
+      opacity: 0;
+      transition: 0.8s;
+      transform: translate(0px, 30px);
+      filter: blur(10px);
+    }
+
+    .cima {
+      opacity: 0;
+      transition: 0.8s;
+      transform: translate(0px, -30px);
+      filter: blur(10px);
+    }
+
+    .ativo {
+      opacity: 1;
+      filter: blur(0px);
+      transition: 0.8s ease all;
+      transform: translate(0, 0);
+    }
+
+    .elementor-editor-active .baixo,
+    .elementor-editor-active .cima,
+    .elementor-editor-active .esquerda,
+    .elementor-editor-active .direita {
+      opacity: 1;
+      transform: translate(0, 0);
+      filter: blur(0);
+    }
+
+    .elemento1 {
+      transition-delay: 0.2s
+    }
+
+    .elemento2 {
+      transition-delay: 0.4s
+    }
+
+    .elemento3 {
+      transition-delay: 0.6s
+    }
+  </style>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+  <script>
+    const posicaoScroll = window.innerHeight * 0.5;
+
+    function fadeScroll() {
+      // Movido para dentro da função para capturar os elementos após o React renderizá-los
+      const elementos = document.querySelectorAll('.cima, .baixo, .esquerda, .direita');
+      elementos.forEach((elemento) => {
+        const elementoTop = elemento.getBoundingClientRect().top - posicaoScroll;
+        if (elementoTop < 320) {
+          elemento.classList.add('ativo');
+        } else {
+          elemento.classList.remove('ativo');
+        }
+      })
+    }
+    window.addEventListener('scroll', fadeScroll);
+    // Dispara uma vez após o carregamento para animações iniciais
+    window.addEventListener('load', () => setTimeout(fadeScroll, 100));
+  </script>
 </body>
 
 </html>
