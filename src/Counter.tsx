@@ -4,9 +4,10 @@ interface CounterProps {
     value: string;
     duration?: number;
     className?: string;
+    prefixColor?: string;
 }
 
-export default function Counter({ value, duration = 2000, className = "" }: CounterProps) {
+export default function Counter({ value, duration = 2000, className = "", prefixColor = "" }: CounterProps) {
     const [count, setCount] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
     const elementRef = useRef<HTMLSpanElement>(null);
@@ -59,12 +60,18 @@ export default function Counter({ value, duration = 2000, className = "" }: Coun
         maximumFractionDigits: 1,
     });
 
+    const isPlusAtStart = value.startsWith('+');
+
     return (
         <span ref={elementRef} className={`tabular-nums ${className}`}>
-            {hasPlus && value.indexOf('+') < value.search(/[0-9]/) ? '+' : ''}
+            {isPlusAtStart && (
+                <span className={`${prefixColor} font-black`}>+</span>
+            )}
             {formattedCount}
             {hasK ? 'K' : ''}
-            {hasPlus && value.indexOf('+') > value.search(/[0-9]/) ? '+' : ''}
+            {!isPlusAtStart && hasPlus && (
+                <span className={`${prefixColor} font-black`}>+</span>
+            )}
         </span>
     );
 }
