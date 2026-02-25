@@ -33,13 +33,13 @@ export default function Acting() {
 
                     {/* Card 2 */}
                     <div className="cima elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
-                        <img alt="Assoreval" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg-opt.webp" />
+                        <img alt="Assoreval" className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg-opt.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
-                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-3 block uppercase">Representação & Classe</span>
-                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-3">Assoreval</h3>
-                            <p className="text-[#6B7280] text-[15px] leading-[1.6]">
+                        <div className="absolute bottom-2 left-2 right-2 bg-white p-5 rounded-xl shadow-lg transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-2 block uppercase">Representação & Classe</span>
+                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-2">Assoreval</h3>
+                            <p className="text-[#6B7280] text-[14px] leading-[1.6]">
                                 Atuação estratégica na associação, <br className="hidden sm:block" />
                                 defendendo os interesses dos produtores <br className="hidden sm:block" />
                                 rurais e fortalecendo a união.
