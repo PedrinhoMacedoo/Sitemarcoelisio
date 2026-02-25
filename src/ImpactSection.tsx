@@ -95,7 +95,7 @@ export default function ImpactSection() {
                                         </span>
                                         <span className="text-xs uppercase text-slate-400 font-bold tracking-wider">Seguidores</span>
                                     </div>
-                                    <a className="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
+                                    <a className="text-primary font-bold flex items-center gap-1 hover:underline" href="https://www.linkedin.com/in/marco-elisio-nunes-b4a10930" target="_blank" rel="noopener noreferrer">
                                         Ver Perfil <span className="material-symbols-outlined text-sm">open_in_new</span>
                                     </a>
                                 </div>
