@@ -24,7 +24,7 @@ export default function ContactSection() {
                                 Leve uma palestra inspiradora e técnica sobre o futuro do agronegócio para sua empresa ou conferência.
                             </p>
                             <div className="flex justify-center w-full mt-4">
-                                <AnimatedButton href="https://wa.me/5562999712161" text="Fale com a equipe" />
+                                <AnimatedButton href="https://wa.me/5562998012376" text="Fale com a equipe" />
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export default function ContactSection() {
                             <h4 className="text-lg font-bold mb-8">Imprensa e PR</h4>
                             <ul className="space-y-4 text-white/60">
                                 <li>press@marcorelisio.com.br</li>
-                                <li>+55 (62) 99999-9999</li>
+                                <li>+55 62 99801-2376</li>
                                 <li>Rua do Agronegócio, 1000 - Goiânia/GO</li>
                             </ul>
                         </div>

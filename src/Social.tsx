@@ -25,21 +25,27 @@ export default function Social() {
                             </h2>
 
                             <p className="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
-                                Acreditamos que o agronegócio tem o poder de transformar vidas não apenas economicamente, mas socialmente. O Projeto Horta Social é um reflexo desse compromisso comunitário e ambiental.
+                                O Projeto Horta Social é uma iniciativa do Instituto APNF que traduz, na prática, o compromisso do agronegócio com a transformação social. Mais do que produzir alimentos, o projeto promove dignidade, educação e fortalecimento comunitário por meio do cultivo sustentável.
                             </p>
 
                             <ul className="space-y-4 text-gray-600 mb-8 text-sm md:text-base font-medium">
                                 <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-3 text-[1.25rem]">check_circle</span>
-                                    <span>Segurança alimentar para comunidades carentes.</span>
+                                    <svg className="w-6 h-6 text-[#65a30d] mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <span>Segurança alimentar para comunidades em situação de vulnerabilidade.</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-3 text-[1.25rem]">check_circle</span>
-                                    <span>Educação ambiental e nutricional.</span>
+                                    <svg className="w-6 h-6 text-[#65a30d] mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <span>Educação ambiental e nutricional aplicada.</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <span className="material-icons text-primary mr-3 text-[1.25rem]">check_circle</span>
-                                    <span>Integração comunitária através do cultivo.</span>
+                                    <svg className="w-6 h-6 text-[#65a30d] mr-3 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <span>Integração comunitária e fortalecimento de vínculos por meio do cultivo coletivo.</span>
                                 </li>
                             </ul>
 

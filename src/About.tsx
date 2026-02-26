@@ -25,18 +25,24 @@ export default function About() {
                     {/* Middle Column */}
                     <div className="cima elemento2 w-full lg:w-2/4 flex flex-col pt-4 lg:px-8">
                         <h2 className="font-display text-3xl md:text-5xl lg:text-[2.75rem] font-medium text-forest mb-8 leading-[1.2] tracking-tight">
-                            Empresário, produtor rural e voz ativa no setor.
+                            Empresário, produtor rural e liderança ativa no agro.
                         </h2>
 
                         <div className="space-y-6 text-gray-600 font-light leading-relaxed text-base md:text-lg max-w-lg">
                             <p>
-                                Com uma trajetória marcada pela paixão e dedicação ao campo, Marco Elísio construiu sua carreira pautada na união entre tradição e inovação tecnológica.
+                                Empresário, produtor rural e liderança ativa no agro, Marco Elísio construiu sua trajetória a partir da vivência no campo, unindo produção, gestão e visão de futuro.
                             </p>
                             <p>
-                                Zootecnista de formação e produtor rural por vocação, ele entende as dores e as potências de quem vive da terra. Sua liderança vai além da porteira, atuando em frentes que modernizam a gestão e ampliam a representatividade do setor produtivo.
+                                Zootecnista de formação, atua como vice-presidente da Planalto Tratores (Goiás e Tocantins), onde participa diretamente da relação com produtores, da aplicação prática de tecnologias e da expansão de negócios voltados à eficiência e aos resultados.
+                            </p>
+                            <p>
+                                Sua experiência também se traduz em palestras e participações institucionais, onde compartilha reflexões sobre gestão, liderança e continuidade no agro.
+                            </p>
+                            <p>
+                                Sua atuação conecta empresas, entidades e pessoas que pensam o campo no longo prazo, com responsabilidade, propósito e decisão.
                             </p>
                             <div className="pt-6">
-                                <span className="font-display italic text-forest text-xl">"O futuro do agro se planta com gestão eficiente e propósito."</span>
+                                <span className="font-display italic text-forest text-xl">"O futuro do agro se constrói com gestão eficiente e decisões que permanecem."</span>
                             </div>
                         </div>
                     </div>

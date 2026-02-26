@@ -6,13 +6,16 @@
 
 @theme {
     /* Primary vibrant green like the "Learn More" buttons */
-    --color-primary: #65a30d;
-    --color-primary-dark: #4d7a09;
+    --color-primary: #687432;
+    --color-primary-dark: #4d5625;
+    /* Escurecido ~15% */
 
     /* Earthy tones from the image */
-    --color-forest: #1e3a2f;
+    --color-forest: #3a411c;
+    /* Escurecido ainda mais para contrastes altos de bg/texto */
     /* Dark green for text and footers */
-    --color-forest-dark: #12221b;
+    --color-forest-dark: #1d210e;
+    /* Quase preto esverdeado para rodapés e fontes */
     /* Very dark background footer */
 
     /* Warm creams for the main background */
@@ -74,6 +77,15 @@
 
     .vertical-rl {
         writing-mode: vertical-rl;
+    }
+}
+
+/* Acting cards - expand text on hover (desktop) */
+@media (min-width: 768px) {
+    .group:hover .acting-card-body {
+        max-height: 300px !important;
+        opacity: 1 !important;
+        margin-top: 0.75rem !important;
     }
 }
 

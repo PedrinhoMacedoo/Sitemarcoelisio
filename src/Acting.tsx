@@ -1,5 +1,13 @@
 
+import { useState } from 'react';
+
 export default function Acting() {
+    const [openCard, setOpenCard] = useState<number | null>(null);
+
+    const toggleCard = (index: number) => {
+        setOpenCard(openCard === index ? null : index);
+    };
+
     return (
         <section className="py-24 md:py-32 bg-background-light relative overflow-hidden" id="atuacao">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,50 +24,68 @@ export default function Acting() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12">
                     {/* Card 1 */}
-                    <div className="esquerda elemento2 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+                    <div
+                        className="esquerda elemento2 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 cursor-pointer"
+                        onClick={() => toggleCard(0)}
+                    >
                         <img loading="lazy" alt="Planalto Tratores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/foto-33.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
-                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-3 block uppercase">Tecnologia & Máquinas</span>
-                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-3">Planalto Tratores</h3>
-                            <p className="text-[#6B7280] text-[15px] leading-[1.6]">
-                                Concessionária referência, levando tecnologia <br className="hidden sm:block" />
-                                de ponta e maquinário eficiente para <br className="hidden sm:block" />
-                                impulsionar a produtividade no campo.
-                            </p>
+                        <div className={`acting-card absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 ${openCard === 0 ? 'acting-card-open' : ''}`}>
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-1 block uppercase">Gestão, Tecnologia e Negócios</span>
+                            <div className="flex justify-between items-center">
+                                <h3 className="font-display text-2xl font-bold text-[#1a2f20]">Planalto Tratores</h3>
+                                <span className={`md:hidden text-primary text-2xl font-light leading-none transition-transform duration-300 ${openCard === 0 ? 'rotate-45' : ''}`}>+</span>
+                            </div>
+                            <div className={`acting-card-body overflow-hidden transition-all duration-500 ${openCard === 0 ? 'max-h-[300px] opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'}`}>
+                                <p className="text-[#6B7280] text-[15px] leading-[1.6]">
+                                    Vice-presidência em uma das principais concessionárias Valtra do Brasil, atuando na relação direta com produtores, aplicação de tecnologia no campo e expansão de negócios em Goiás e Tocantins.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="cima elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+                    <div
+                        className="cima elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 cursor-pointer"
+                        onClick={() => toggleCard(1)}
+                    >
                         <img alt="Assoreval" className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-700" src="/assoreval-bg-opt.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-2 left-2 right-2 bg-white p-5 rounded-xl shadow-lg transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
-                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-2 block uppercase">Representação & Classe</span>
-                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-2">Assoreval</h3>
-                            <p className="text-[#6B7280] text-[14px] leading-[1.6]">
-                                Atuação estratégica na associação, <br className="hidden sm:block" />
-                                defendendo os interesses dos produtores <br className="hidden sm:block" />
-                                rurais e fortalecendo a união.
-                            </p>
+                        <div className={`acting-card absolute bottom-2 left-2 right-2 bg-white p-5 rounded-xl shadow-lg transition-all duration-500 ${openCard === 1 ? 'acting-card-open' : ''}`}>
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-1 block uppercase">Liderança Institucional</span>
+                            <div className="flex justify-between items-center">
+                                <h3 className="font-display text-2xl font-bold text-[#1a2f20]">Assoreval</h3>
+                                <span className={`md:hidden text-primary text-2xl font-light leading-none transition-transform duration-300 ${openCard === 1 ? 'rotate-45' : ''}`}>+</span>
+                            </div>
+                            <div className={`acting-card-body overflow-hidden transition-all duration-500 ${openCard === 1 ? 'max-h-[300px] opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'}`}>
+                                <p className="text-[#6B7280] text-[14px] leading-[1.6]">
+                                    Presidente da Associação Brasileira dos Distribuidores Autorizados Valtra. Atuação na liderança da associação que representa a Rede Valtra, fortalecendo a união entre distribuidores, a governança institucional e o desenvolvimento sustentável da cadeia produtiva.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* Card 3 */}
-                    <div className="direita elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500">
+                    <div
+                        className="direita elemento3 group relative rounded-[20px] h-[450px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 cursor-pointer"
+                        onClick={() => toggleCard(2)}
+                    >
                         <img loading="lazy" alt="Agrovia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/agrovia.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
-                        <div className="absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
-                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-3 block uppercase">Infraestrutura</span>
-                            <h3 className="font-display text-2xl font-bold text-[#1a2f20] mb-3">Agrovia</h3>
-                            <p className="text-[#6B7280] text-[15px] leading-[1.6]">
-                                Logística conectada, garantindo que a <br className="hidden sm:block" />
-                                produção chegue ao destino com eficiência <br className="hidden sm:block" />
-                                na rodovia Castelo Branco.
-                            </p>
+                        <div className={`acting-card absolute bottom-2 left-2 right-2 bg-white p-6 rounded-xl shadow-lg transition-all duration-500 ${openCard === 2 ? 'acting-card-open' : ''}`}>
+                            <span className="text-[11px] font-bold tracking-[0.15em] text-[#9CA3AF] mb-1 block uppercase">Conexão e Desenvolvimento</span>
+                            <div className="flex justify-between items-center">
+                                <h3 className="font-display text-2xl font-bold text-[#1a2f20]">Agrovia Castelo Branco</h3>
+                                <span className={`md:hidden text-primary text-2xl font-light leading-none transition-transform duration-300 ${openCard === 2 ? 'rotate-45' : ''}`}>+</span>
+                            </div>
+                            <div className={`acting-card-body overflow-hidden transition-all duration-500 ${openCard === 2 ? 'max-h-[300px] opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'}`}>
+                                <p className="text-[#6B7280] text-[15px] leading-[1.6]">
+                                    Presidente da Agrovia Castelo Branco, a maior avenida do agro do Brasil. Atua na integração entre empresas, produtores e serviços, fortalecendo um ecossistema empresarial diverso, com foco em logística, visibilidade e crescimento coletivo do setor.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

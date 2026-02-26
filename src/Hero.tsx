@@ -24,7 +24,7 @@ export default function Hero() {
                 </div>
 
                 {/* Overlay Component */}
-                <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 to-black/90 lg:from-black/40 lg:to-black"></div>
+                <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/30 to-black/60 lg:from-black/20 lg:to-black/70"></div>
 
                 <div className="relative z-10 w-full h-full p-8 lg:p-20 flex flex-col justify-end">
                     <div className="max-w-4xl">
@@ -42,7 +42,7 @@ export default function Hero() {
                             </div>
 
                             <div className="direita elemento3 shrink-0 w-full sm:w-auto">
-                                <AnimatedButton href="https://wa.me/5562999712161" text="Entre em Contato" />
+                                <AnimatedButton href="https://wa.me/5562998012376" text="Entre em Contato" />
                             </div>
                         </div>
                     </div>

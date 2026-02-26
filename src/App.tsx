@@ -1,3 +1,4 @@
+import NavBar from './NavBar'
 import Hero from './Hero'
 import About from './About'
 import Acting from './Acting'
@@ -10,6 +11,7 @@ import './App.css'
 function App() {
   return (
     <main className="bg-background-light text-gray-800 font-sans antialiased min-h-screen relative overflow-x-hidden transition-colors duration-300">
+      <NavBar />
       <Hero />
       <About />
       <Acting />

@@ -63,7 +63,7 @@ export default function Counter({ value, duration = 2000, className = "", prefix
     const isPlusAtStart = value.startsWith('+');
 
     return (
-        <span ref={elementRef} className={`tabular-nums ${className}`}>
+        <span ref={elementRef} translate="no" className={`tabular-nums ${className}`}>
             {isPlusAtStart && (
                 <span className={`${prefixColor} font-black mr-1`}>+</span>
             )}
