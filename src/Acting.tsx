@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import AnimatedButton from './AnimatedButton';
 
 export default function Acting() {
     const [openCard, setOpenCard] = useState<number | null>(null);
@@ -41,6 +42,13 @@ export default function Acting() {
                                 <p className="text-[#6B7280] text-[15px] leading-[1.6]">
                                     Vice-presidência em uma das principais concessionárias Valtra do Brasil, atuando na relação direta com produtores, aplicação de tecnologia no campo e expansão de negócios em Goiás e Tocantins.
                                 </p>
+                                <div className="mt-4">
+                                    <AnimatedButton
+                                        text="Ver mais"
+                                        href="https://planaltotratores.com.br/"
+                                        className="nav-bttn"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,6 +71,13 @@ export default function Acting() {
                                 <p className="text-[#6B7280] text-[14px] leading-[1.6]">
                                     Presidente da Associação Brasileira dos Distribuidores Autorizados Valtra. Atuação na liderança da associação que representa a Rede Valtra, fortalecendo a união entre distribuidores, a governança institucional e o desenvolvimento sustentável da cadeia produtiva.
                                 </p>
+                                <div className="mt-4">
+                                    <AnimatedButton
+                                        text="Ver mais"
+                                        href="https://assoreval.com.br/"
+                                        className="nav-bttn"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,6 +100,13 @@ export default function Acting() {
                                 <p className="text-[#6B7280] text-[15px] leading-[1.6]">
                                     Presidente da Agrovia Castelo Branco, a maior avenida do agro do Brasil. Atua na integração entre empresas, produtores e serviços, fortalecendo um ecossistema empresarial diverso, com foco em logística, visibilidade e crescimento coletivo do setor.
                                 </p>
+                                <div className="mt-4">
+                                    <AnimatedButton
+                                        text="Ver mais"
+                                        href="#"
+                                        className="nav-bttn"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

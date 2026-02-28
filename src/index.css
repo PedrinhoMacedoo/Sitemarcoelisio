@@ -125,7 +125,7 @@ html::before {
     display: inline-flex;
     align-items: center;
     background-color: #353C36;
-    padding: 10px 84px 10px 40px;
+    padding: 10px 60px 10px 30px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
@@ -138,8 +138,8 @@ html::before {
 }
 
 .bttn-father.nav-bttn {
-    height: 48px;
-    padding: 8px 64px 8px 28px;
+    height: 42px;
+    padding: 8px 52px 8px 24px;
     font-size: 14px;
     border-radius: 10px;
 }
