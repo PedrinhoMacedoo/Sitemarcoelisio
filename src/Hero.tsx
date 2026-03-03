@@ -8,17 +8,17 @@ export default function Hero() {
             <div className="relative w-full h-full max-w-screen-2xl overflow-hidden rounded-[20px] lg:rounded-[40px] bg-forest-dark shadow-2xl">
                 {/* Background Image */}
                 {/* Background Image Wrapper */}
-                <div className="absolute top-0 bottom-0 z-0 bg-forest-dark right-0 w-full lg:right-[-35%] lg:w-[135%]">
+                <div className="absolute inset-0 z-0 bg-forest-dark">
                     {/* Mobile Image */}
                     <img
                         className="w-full h-full object-cover object-center pointer-events-none absolute inset-0 lg:hidden"
-                        src="/hero-mobile.webp"
+                        src="/hero-mobile-new.webp"
                         alt="Background Hero Marco Elísio - Mobile"
                     />
                     {/* Desktop Image */}
                     <img
                         className="w-full h-full object-cover object-right pointer-events-none absolute inset-0 hidden lg:block"
-                        src="/hero-bg-opt.webp"
+                        src="/hero-desktop.png"
                         alt="Background Hero Marco Elísio - Desktop"
                     />
                 </div>

@@ -5,6 +5,7 @@ import Acting from './Acting'
 import Social from './Social'
 import Lectures from './Lectures'
 import MediaStats from './MediaStats'
+import MediaKitSection from './MediaKitSection'
 import Footer from './Footer'
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
       <Acting />
       <Social />
       <Lectures />
+      <MediaKitSection />
       <MediaStats />
       <Footer />
     </main>
